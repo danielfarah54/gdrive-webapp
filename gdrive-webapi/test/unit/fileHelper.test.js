@@ -44,10 +44,10 @@ describe("#FileHelper test suite", () => {
       const result = await FileHelper.getFilesStatus("/tmp");
       const expectedResult = [
         {
-          size: "1.1 MB",
-          birthtime: statMock.birthtime,
-          owner: mockUser,
           file: filename,
+          lastModified: statMock.birthtime,
+          owner: mockUser,
+          size: "1.2 MB",
         },
       ];
 
