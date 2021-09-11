@@ -6,12 +6,12 @@
 export default {
   clearMocks: true,
   restoreMocks: true,
-  collectCoverage: true,
+  // collectCoverage: true,
   coverageDirectory: "coverage",
   coverageProvider: "v8",
   coverageReporters: ["text", "lcov"],
   testEnvironment: "node",
-  coverageThreshould: {
+  coverageThreshold: {
     global: {
       branches: 100,
       functions: 100,
